@@ -1,5 +1,122 @@
+
+
+.userImage {
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin-left: 65%;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
 .navbar {
   max-width: 1200px;
   height: auto;
   margin: 0 auto;
+}
+
+/* .image {
+  z-index: -100;
+} */
+/* .navbar ul {
+  list-style: none;
+  width: 100%;
+  height: 100px;
+} */
+
+.navbar ul {
+  float: right;
+}
+
+.navbar ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  line-height: 100px;
+  padding: 10px 28px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  background-color: red;
+  color: white;
+  transition: 0.4s;
+}
+
+.navbar img {
+  float: left;
+  width: 100px;
+  height: auto;
+  padding-top: 2%;
+}
+/* .outter {
+  
+  box-sizing: border-box;
+  justify-content: center;
+  padding-top: 15%;
+  padding-left: 40%;
+  position: absolute;
+}
+
+.outter input{
+  margin-bottom: 20px;  
+} */
+
+.outter{
+  box-sizing: border-box;
+  justify-content: center;
+  padding-top: 12%;
+  padding-left: 60%;
+  position: absolute;
+}
+
+.outter div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.outter input,
+.outter textarea {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  padding-left: 150px;
+
+  margin-bottom: 17px;
+  outline: none;
+  border: 3px solid #ccc;
+  box-sizing: border-box
+} 
+
+.outter button{
+  margin-left: 30%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
