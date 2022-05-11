@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  padding: 1em 1em 1em 1em;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  width: 20vw;
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.recipe h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.recipe strong {
+  color: gray;
+}
+
+.back {
+  margin-top: 3em;
+  font-size: medium;
+}
+
+
