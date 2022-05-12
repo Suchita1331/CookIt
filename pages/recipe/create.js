@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import styles from "../../styles/create.module.css";
 
 const CreateRecipe = () => {
   const [name, setName] = useState("");
@@ -27,29 +28,38 @@ const CreateRecipe = () => {
     }
   }
   return (
-    <div>
+    <div className={styles.body}>
       <form onSubmit={handleSubmit}>
+        <h2>Add Recipe..</h2>
         <input
           placeholder="Enter Recipe Name"
           type="text"
           onChange={(e) => setName(e.target.value)}
+          required
         />
         <input
           placeholder="Enter Recipe Ingredients"
           type="text"
           onChange={(e) => setIngredients(e.target.value)}
+          required
         />
         <input
           placeholder="Enter Recipe Cooking Time"
           type="time"
           onChange={(e) => setTime(e.target.value)}
+          required
         />
         <textarea
           placeholder="Enter Recipe Procedure"
           type="text"
           onChange={(e) => setProcedure(e.target.value)}
+          required
         />
-        <input type="submit" value="Create Recipe" />
+        <div>
+          <button className={styles.submit}>
+            <a>Create Recipe</a>
+          </button>
+        </div>
       </form>
     </div>
   );

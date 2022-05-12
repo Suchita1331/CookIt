@@ -14,7 +14,7 @@ export default function Home() {
           <div>{user.name}</div>
           <img src={user.picture} className={styles.userImage} />
         </div>
-      )}
+      )} 
       {!user && (
         <div>
           <a href="/api/auth/login">Login</a>
@@ -24,15 +24,15 @@ export default function Home() {
         <div>
           {/* <div className={styles.slide}></div> */}
 
-          <div class="section">
+          <div className={styles.section}>
             <div className={styles.navbar}>
               <nav>
                 <div class="logo">
-                  <img src="/logo.png" />
+                  <img src="/logo1.png" />
                 </div>
                 <ul>
                   <li>
-                    <a href="/home" class="nav-link">
+                    <a href="/" class="nav-link">
                       Home
                     </a>
                   </li>
@@ -64,74 +64,113 @@ export default function Home() {
                     )}
                   </li>
                   {/* <li>
-                  <a href="/signup" class="nav-link">
-                    Sign Up
-                  </a>
-                </li> */}
-                  <li>
                     {user && (
                       <img src={user.picture} className={styles.userImage} />
                     )}
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
-          </div>
-        </div>
-        <div class="title">
-          <div className={styles.head}>
-            <h1>
-              <span>C</span>ook <span>I</span>t - A <span>R</span>ecipe{" "}
-              <span>D</span>iary!!
-            </h1>
-            <p>
-              "<span>Eating</span> is necessity but <span>Cooking</span> is an
-              Art."
-            </p>
-          </div>
-        </div>
-
-        {/* <section id="about">
-          <div class="title-text">
-            <div className={styles.titletext}
-              <h2>ABOUT</h2>
+            <div className={styles.bgimage}>
+              <h1>
+                <span>C</span>ook <span>I</span>t - A <span>R</span>ecipe{" "}
+                <span>D</span>iary!!
+              </h1>
+              <p>
+                "<span>Eating</span> is necessity but <span>Cooking</span> is an
+                Art."
+              </p>
             </div>
           </div>
-        </section> */}
+        </div>
 
         <section id="about">
-          <div class="title-text">
-            <div className={styles.titletext}>
-              <h2>Gallery</h2>
-            </div>
+          <div className={styles.title}>
+            <h1>Gallery</h1>
           </div>
-
 
           <div className={styles.gallery}>
             <div>
-              <img src="../../images/BG4.jpg" />
+               <a href="https://www.youtube.com/watch?v=AhoZ2TbLxzU" target="popup">
+              <img src="../../images/q.jpg" />
+              </a>
             </div>
 
             <div>
-              <img src="../../images/BG1.jpg" />
+              <a href="https://www.youtube.com/watch?v=u3J5__4I9sQ" target="popup">
+              <img src="../../images/bmc.jpeg" />
+              </a>
             </div>
 
             <div>
-              <img src="../../images/BG2.jpg" />
+              <a href="https://www.youtube.com/watch?v=iKFxcxjKYPU" target="popup">
+              <img src="../../images/ccb.jpg" />
+              </a>
             </div>
-          </div>
-
-          <div className={styles.gallery1}>
             <div>
-              <img src="../../images/BG4.jpg" />
-            </div>
-
-            <div>
-              <img src="../../images/BG1.jpg" />
+              <a href="https://www.youtube.com/watch?v=EA4yMzlHo9U" target="popup">
+              <img src="../../images/cm.jpg" />
+              </a>
             </div>
 
             <div>
-              <img src="../../images/BG2.jpg" />
+              <a href="https://www.youtube.com/watch?v=yy3R1Pe0jcc" target="popup">
+              <img src="../../images/cheesecake.jpg" />
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.youtube.com/watch?v=f_dT7ZbKnzk" target="popup">
+              <img src="../../images/lbp.jpg" />
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.youtube.com/watch?v=_q5GKCNZcHI" target="popup">
+              <img src="../../images/burger.jpg" />
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.youtube.com/watch?v=fCdafpE7Bpw" target="popup">
+              <img src="../../images/momos.jpg" />
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.youtube.com/watch?v=XsipAaImDVc" target="popup">
+              <img src="../../images/pasta.jpg" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/watch?v=dfNugDnzhxI" target="popup">
+              <img src="../../images/pc.jpg" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/watch?v=aQHr9Zsnzbw" target="popup">
+              <img src="../../images/noodles.jpg" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/watch?v=wSeVF0YWLV4" target="popup">
+              <img src="../../images/pt.jpg" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/watch?v=Isn45rbkdpA" target="popup">
+              <img src="../../images/sbpie.jpg" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/watch?v=pvSL_VsLb4w" target="popup">
+              <img src="../../images/tacos.jpg" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/watch?v=h8b3rBxg9zA" target="popup">
+              <img src="../../images/tiramisu.jpg" />
+              </a>
             </div>
           </div>
         </section>

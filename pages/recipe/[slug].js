@@ -33,22 +33,26 @@ const RecipePage = ({ recipe }) => {
   return (
     <>
       <a href="/recipe" className={styles.back}>
-        {"<"} back
+        <span>{"<"} Back</span>
       </a>
-
-      <h1>{recipe.name}</h1>
-      <div>
-        <strong>Cooking Time : </strong>
-        {recipe.cookingTime}
-      </div>
-      <div>
-        <strong>Ingredients : </strong>
-        {recipe.ingredients}
-      </div>
-      <div>
-        <strong>Procedure : </strong>
-        {recipe.procedure}
-      </div>
+      <section className={styles.menu}>
+        <h1>{recipe.name}</h1>
+        <div>
+          <strong>Cooking Time : </strong>
+          <span>( In minutes )</span>
+           {recipe.cookingTime}
+        </div>
+        <div>
+          <strong>Ingredients : </strong>
+          {recipe.ingredients}
+        </div>
+        <div>
+            <strong>
+              Procedure :<br />
+            </strong>
+            {recipe.procedure}
+        </div>
+      </section>
     </>
   );
 };

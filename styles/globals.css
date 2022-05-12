@@ -11,9 +11,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: blueviolet;
-}
+/* a:hover {
+  color: white;
+} */
 
 * {
   box-sizing: border-box;
