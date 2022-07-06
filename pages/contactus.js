@@ -1,5 +1,6 @@
 import { useUser } from "@auth0/nextjs-auth0";
-import link from "next/link";
+import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/contact.module.css";
 
 const contactus = () => {
@@ -11,45 +12,55 @@ const contactus = () => {
         <div className={styles.navbar}>
           <nav>
             <div className="logo">
-              <img src="/logo1.png" />
+              <Image src="/logo1.png" />
             </div>
             <ul>
               <li>
-                <a href="/" className="nav-link">
-                  Home
-                </a>
+                <Link>
+                  <a href="/" className="nav-link">
+                    Home
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="/aboutus" className="nav-link">
-                  About us
-                </a>
+                <Link>
+                  <a href="/aboutus" className="nav-link">
+                    About us
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="/recipe" className="nav-link">
-                  Recipe
-                </a>
+                <Link>
+                  <a href="/recipe" className="nav-link">
+                    Recipe
+                  </a>
+                </Link>
               </li>
               <li>
                 {user && (
-                  <a href="/api/auth/logout" className="nav-link">
-                    Logout
-                  </a>
+                  <Link>
+                    <a href="/api/auth/logout" className="nav-link">
+                      Logout
+                    </a>
+                 </Link>
                 )}
                 {!user && (
-                  <a href="/api/auth/login" className="nav-link">
-                    Login
-                  </a>
+                  <Link>
+                    <a href="/api/auth/login" className="nav-link">
+                      Login
+                    </a>
+                  </Link>
                 )}
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="title">
+      <div className="title">
         <div className={styles.body}>
           <section>
-            <div class={styles.image}>
-              <img src="https://pngimg.com/uploads/chef/chef_PNG61.png" />
+            <div className={styles.image}>
+              <Image src="https://pngimg.com/uploads/chef/chef_PNG61.png" />
             </div>
             <div>
               <h2> Contact Us </h2>
@@ -70,7 +81,9 @@ const contactus = () => {
               </div>
               <ul className={styles.links}>
                 <li>
-                  <a href="/aboutus"> About us </a>
+                  <Link>
+                    <a href="/aboutus"> About us </a>
+                  </Link>
                 </li>
               </ul>
             </div>
