@@ -4,8 +4,6 @@ import Image from "next/image";
 import styles from "../styles/contact.module.css";
 
 const contactus = () => {
-  const { user, error, loading } = useUser();
-
   return (
     <main>
       <div>
