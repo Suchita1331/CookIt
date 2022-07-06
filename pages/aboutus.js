@@ -1,53 +1,64 @@
 import { useUser } from "@auth0/nextjs-auth0";
-import link from "next/link";
+import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/aboutus.module.css";
 const aboutus = () => {
   const { user } = useUser();
   return (
     <main>
-      <div class="section">
+      <div className="section">
         <div className={styles.navbar}>
           <nav>
-            <div class="logo">
-              <img src="/logo1.png" />
+            <div className="logo">
+              <Image src="/logo1.png" />
             </div>
             <ul>
               <li>
-                <a href="/" className="nav-link">
-                  Home
-                </a>
+                <Link href="/" className="nav-link">
+                  <a>
+                    Home
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="/contactus" className="nav-link">
-                  Contact Us
-                </a>
+                <Link href="/contactus" className="nav-link">
+                  <a>
+                    Contact Us
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="/recipe" class="nav-link">
-                  Recipe
-                </a>
+                <Link href="/recipe" className="nav-link">
+                  <a>
+                    Recipe
+                  </a>
+                </Link>
               </li>
               <li>
                 {user && (
-                  <a href="/api/auth/logout" class="nav-link">
-                    Logout{" "}
-                  </a>
+                 <Link href="/api/auth/logout" className="nav-link">
+                    <a>
+                      Logout{" "}
+                    </a>
+                 </Link>
                 )}{" "}
                 {!user && (
-                  <a href="/api/auth/login" class="nav-link">
-                    Login
-                  </a>
+                  <Link href="/api/auth/login" className="nav-link">
+                    <a>
+                      Login
+                    </a>
+                  </Link>
                 )}
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="title">
+      <div className="title">
         <div className={styles.body}>
           <section>
             <div classname={styles.image}>
-              <img src="https://pngimg.com/uploads/chef/chef_PNG117.png" />
+              <Image src="https://pngimg.com/uploads/chef/chef_PNG117.png" />
             </div>
             <div classname={styles.content}>
               <h2> About Us </h2> <span> </span>
@@ -59,11 +70,15 @@ const aboutus = () => {
               </p>
               <ul classname={styles.links}>
                 <li>
-                  <a href="/members"> Members </a>
+                  <Link href="/members">
+                    <a> Members </a>
+                  </Link>
                 </li>
-                <div class="vertical-line"> </div>
+                <div className="vertical-line"> </div>
                 <li>
-                  <a href="/contactus"> Contact </a>
+                  <Link href="/contactus">
+                    <a> Contact </a>
+                  </Link>
                 </li>
               </ul>
             </div>
