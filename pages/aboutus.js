@@ -6,29 +6,29 @@ const aboutus = () => {
   const { user } = useUser();
   return (
     <main>
-      <div className="section">
+      <div>
         <div className={styles.navbar}>
           <nav>
-            <div className="logo">
-              <Image src="/logo1.png" />
+            <div>
+              <Image src="/logo1.png" alt="logo" />
             </div>
             <ul>
               <li>
-                <Link href="/" className="nav-link">
+                <Link href="/">
                   <a>
                     Home
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/contactus" className="nav-link">
+                <Link href="/contactus">
                   <a>
                     Contact Us
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/recipe" className="nav-link">
+                <Link href="/recipe">
                   <a>
                     Recipe
                   </a>
@@ -36,14 +36,14 @@ const aboutus = () => {
               </li>
               <li>
                 {user && (
-                 <Link href="/api/auth/logout" className="nav-link">
+                 <Link href="/api/auth/logout">
                     <a>
                       Logout{" "}
                     </a>
                  </Link>
                 )}{" "}
                 {!user && (
-                  <Link href="/api/auth/login" className="nav-link">
+                  <Link href="/api/auth/login">
                     <a>
                       Login
                     </a>
@@ -54,11 +54,11 @@ const aboutus = () => {
           </nav>
         </div>
       </div>
-      <div className="title">
+      <div>
         <div className={styles.body}>
           <section>
             <div classname={styles.image}>
-              <Image src="https://pngimg.com/uploads/chef/chef_PNG117.png" />
+              <Image src="https://pngimg.com/uploads/chef/chef_PNG117.png" alt="chef" />
             </div>
             <div classname={styles.content}>
               <h2> About Us </h2> <span> </span>
