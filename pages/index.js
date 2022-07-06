@@ -114,7 +114,7 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=u3J5__4I9sQ" target="popup">
                 <a>
-                  <Image src="../../images/bmc.jpeg" alt="bmc />
+                  <Image src="../../images/bmc.jpeg" alt="bmc" />
                 </a>
               </Link>
             </div>
