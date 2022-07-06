@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/members.module.css";
 const members = () => {
+  const { user } = useUser();
   return (
     <main>
       <div>
