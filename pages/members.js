@@ -6,29 +6,29 @@ const members = () => {
   const { user } = useUser();
   return (
     <main>
-      <div className="section">
+      <div>
         <div className={styles.navbar}>
           <nav>
-            <div class="logo">
-              <Image src="/logo1.png" />
+            <div>
+              <Image src="/logo1.png" alt="logo" />
             </div>
             <ul>
               <li>
-                <Link href="/" className="nav-link">
+                <Link href="/">
                   <a>
                     Home
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/contactus" className="nav-link">
+                <Link href="/contactus">
                   <a>
                     Contact Us
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/recipe" className="nav-link">
+                <Link href="/recipe">
                   <a>
                     Recipe
                   </a>
@@ -36,14 +36,14 @@ const members = () => {
               </li>
               <li>
                 {user && (
-                  <Link href="/api/auth/logout" className="nav-link">
+                  <Link href="/api/auth/logout">
                     <a>
                       Logout
                     </a>
                  </Link>
                 )}
                 {!user && (
-                  <Link href="/api/auth/login" className="nav-link">
+                  <Link href="/api/auth/login">
                     <a>
                       Login
                     </a>
@@ -54,7 +54,7 @@ const members = () => {
           </nav>
         </div>
       </div>
-      <div className="title">
+      <div>
         <div className={styles.body}>
           <section>
             <div classname={styles.image}>
@@ -64,7 +64,7 @@ const members = () => {
               <h2> Members </h2>
               <span></span>
               <div>
-                <Image src=".." />
+                <Image src="../images/Suchita.jpg" alt="suchita" />
                 <h3>Ms. Suchita Mishra</h3>
                 <p>Dept - Computer Science And Engineering</p>
                 <p>Roll No. CS19B38</p>
@@ -76,13 +76,13 @@ const members = () => {
                 <p>Roll No. CS19B34</p>
               </div>
               <div>
-                <Image src="#" />
+                <Image src="../images/Pushpak.jpg" alt="pushpak" />
                 <h3>Mr. Pushpak Fasate</h3>
                 <p>Dept - Computer Science And Engineering</p>
                 <p>Roll No. CS19B58</p>
               </div>
               <div>
-                <Image src="#" />
+                <Image src="../images/Suchita.jpg" alt="sushant" />
                 <h3>Mr. Sushant Choudhari</h3>
                 <p>Dept - Computer Science And Engineering</p>
                 <p>Roll No. CS19B65</p>
