@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/aboutus.module.css";
 const aboutus = () => {
+  const { user } = useUser();
   return (
     <main>
       <div>
