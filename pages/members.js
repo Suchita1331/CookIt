@@ -57,7 +57,7 @@ const members = () => {
       <div>
         <div className={styles.body}>
           <section>
-            <div classname={styles.image}>
+            <div className={styles.image}>
               <Image src="https://pngimg.com/uploads/chef/chef_PNG132.png" alt="chef" />
             </div>
             <div>
