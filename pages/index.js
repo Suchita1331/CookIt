@@ -2,6 +2,7 @@ import { useUser } from "@auth0/nextjs-auth0";
 import styles from "../styles/home.module.css";
 
 import Image from "next/image";
+import Link from 'next/link';
 export default function Home() {
   const { user, error, loading } = useUser();
   return (
@@ -27,40 +28,52 @@ export default function Home() {
           <div className={styles.section}>
             <div className={styles.navbar}>
               <nav>
-                <div class="logo">
-                  <img src="/logo1.png" />
+                <div className="logo">
+                  <Image src="/logo1.png" />
                 </div>
                 <ul>
                   <li>
-                    <a href="/" class="nav-link">
-                      Home
-                    </a>
+                    <Link href="/" className="nav-link">
+                      <a>
+                        Home
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/aboutus" class="nav-link">
-                      About Us
-                    </a>
+                    <Link href="/aboutus" className="nav-link">    
+                      <a>
+                        About Us
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/contactus" class="nav-link">
-                      Contact Us
-                    </a>
+                    <Link href="/contactus" className="nav-link">
+                      <a>
+                        Contact Us
+                      </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/recipe" class="nav-link">
-                      Recipe
-                    </a>
+                    <Link href="/recipe" className="nav-link">
+                      <a>
+                        Recipe
+                      </a>
+                    </Link>
                   </li>
                   <li>
                     {user && (
-                      <a href="/api/auth/logout" class="nav-link">
-                        Logout
-                      </a>
+                      <Link href="/api/auth/logout" className="nav-link"> 
+                        <a>
+                          Logout
+                        </a>
+                      </Link>
                     )}
                     {!user && (
-                      <a href="/api/auth/login" class="nav-link">
-                        Login
-                      </a>
+                      <Link href="/api/auth/login" className="nav-link">
+                        <a>
+                          Login
+                        </a>
+                      </Link>
                     )}
                   </li>
                   {/* <li>
@@ -91,86 +104,116 @@ export default function Home() {
 
           <div className={styles.gallery}>
             <div>
-               <a href="https://www.youtube.com/watch?v=AhoZ2TbLxzU" target="popup">
-              <img src="../../images/q.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=AhoZ2TbLxzU" target="popup">
+                <a>
+                  <Image src="../../images/q.jpg" />
+                </a>
+              </Link>
             </div>
 
             <div>
-              <a href="https://www.youtube.com/watch?v=u3J5__4I9sQ" target="popup">
-              <img src="../../images/bmc.jpeg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=u3J5__4I9sQ" target="popup">
+                <a>
+                  <Image src="../../images/bmc.jpeg" />
+                </a>
+              </Link>
             </div>
 
             <div>
-              <a href="https://www.youtube.com/watch?v=iKFxcxjKYPU" target="popup">
-              <img src="../../images/ccb.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=iKFxcxjKYPU" target="popup">
+                <a>
+                  <Image src="../../images/ccb.jpg" />
+                </a>
+              </Link>
             </div>
             <div>
-              <a href="https://www.youtube.com/watch?v=EA4yMzlHo9U" target="popup">
-              <img src="../../images/cm.jpg" />
-              </a>
-            </div>
-
-            <div>
-              <a href="https://www.youtube.com/watch?v=yy3R1Pe0jcc" target="popup">
-              <img src="../../images/cheesecake.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=EA4yMzlHo9U" target="popup">
+                <a>
+                  <Image src="../../images/cm.jpg" />
+                </a>
+              </Link>
             </div>
 
             <div>
-              <a href="https://www.youtube.com/watch?v=f_dT7ZbKnzk" target="popup">
-              <img src="../../images/lbp.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=yy3R1Pe0jcc" target="popup">
+                <a>
+                  <Image src="../../images/cheesecake.jpg" />
+                </a>
+              </Link>
             </div>
 
             <div>
-              <a href="https://www.youtube.com/watch?v=_q5GKCNZcHI" target="popup">
-              <img src="../../images/burger.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=f_dT7ZbKnzk" target="popup">
+                <a>
+                  <Image src="../../images/lbp.jpg" />
+                </a>
+              </Link>
             </div>
 
             <div>
-              <a href="https://www.youtube.com/watch?v=fCdafpE7Bpw" target="popup">
-              <img src="../../images/momos.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=_q5GKCNZcHI" target="popup">
+                <a>
+                  <Image src="../../images/burger.jpg" />
+                </a>
+              </Link>
             </div>
 
             <div>
-              <a href="https://www.youtube.com/watch?v=XsipAaImDVc" target="popup">
-              <img src="../../images/pasta.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=fCdafpE7Bpw" target="popup">
+                <a>
+                  <Image src="../../images/momos.jpg" />
+                </a>
+              </Link>
+            </div>
+
+            <div>
+              <Link href="https://www.youtube.com/watch?v=XsipAaImDVc" target="popup">
+                <a>
+                  <Image src="../../images/pasta.jpg" />
+                </a>
+              </Link>
             </div>
             <div>
-              <a href="https://www.youtube.com/watch?v=dfNugDnzhxI" target="popup">
-              <img src="../../images/pc.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=dfNugDnzhxI" target="popup">
+                <a>
+                  <Image src="../../images/pc.jpg" />
+                </a>
+              </Link>
             </div>
             <div>
-              <a href="https://www.youtube.com/watch?v=aQHr9Zsnzbw" target="popup">
-              <img src="../../images/noodles.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=aQHr9Zsnzbw" target="popup">
+                <a>
+                  <Image src="../../images/noodles.jpg" />
+                </a>
+              </Link>
             </div>
             <div>
-              <a href="https://www.youtube.com/watch?v=wSeVF0YWLV4" target="popup">
-              <img src="../../images/pt.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=wSeVF0YWLV4" target="popup">
+                <a>
+                  <Image src="../../images/pt.jpg" />
+                </a>
+              </Link>
             </div>
             <div>
-              <a href="https://www.youtube.com/watch?v=Isn45rbkdpA" target="popup">
-              <img src="../../images/sbpie.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=Isn45rbkdpA" target="popup">
+                <a>
+                  <Image src="../../images/sbpie.jpg" />
+                </a>
+              </Link>
             </div>
             <div>
-              <a href="https://www.youtube.com/watch?v=pvSL_VsLb4w" target="popup">
-              <img src="../../images/tacos.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=pvSL_VsLb4w" target="popup">
+                <a>
+                  <Image src="../../images/tacos.jpg" />
+                </a>
+              </Link>
             </div>
             <div>
-              <a href="https://www.youtube.com/watch?v=h8b3rBxg9zA" target="popup">
-              <img src="../../images/tiramisu.jpg" />
-              </a>
+              <Link href="https://www.youtube.com/watch?v=h8b3rBxg9zA" target="popup">
+                <a>
+                  <Image src="../../images/tiramisu.jpg" />
+                </a>
+              </Link>
             </div>
           </div>
         </section>
