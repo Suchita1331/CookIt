@@ -57,10 +57,10 @@ const aboutus = () => {
       <div>
         <div className={styles.body}>
           <section>
-            <div classname={styles.image}>
+            <div className={styles.image}>
               <Image src="https://pngimg.com/uploads/chef/chef_PNG117.png" alt="chef" />
             </div>
-            <div classname={styles.content}>
+            <div className={styles.content}>
               <h2> About Us </h2> <span> </span>
               <p>
                 Cook It - A Recipe Diary is intended to be used for day to day
@@ -68,13 +68,13 @@ const aboutus = () => {
                 user interface that allows the user to find and view different
                 food recipes based on input provided by the users.
               </p>
-              <ul classname={styles.links}>
+              <ul className={styles.links}>
                 <li>
                   <Link href="/members">
                     <a> Members </a>
                   </Link>
                 </li>
-                <div className="vertical-line"> </div>
+                <div className={styles.vertical-line}> </div>
                 <li>
                   <Link href="/contactus">
                     <a> Contact </a>
