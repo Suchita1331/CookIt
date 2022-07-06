@@ -8,29 +8,29 @@ const contactus = () => {
 
   return (
     <main>
-      <div className="section">
+      <div>
         <div className={styles.navbar}>
           <nav>
-            <div className="logo">
-              <Image src="/logo1.png" />
+            <div>
+              <Image src="/logo1.png" alt="logo" />
             </div>
             <ul>
               <li>
-                <Link href="/" className="nav-link">
+                <Link href="/">
                   <a>
                     Home
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/aboutus" className="nav-link">
+                <Link href="/aboutus">
                   <a>
                     About us
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/recipe" className="nav-link">
+                <Link href="/recipe">
                   <a>
                     Recipe
                   </a>
@@ -38,14 +38,14 @@ const contactus = () => {
               </li>
               <li>
                 {user && (
-                  <Link href="/api/auth/logout" className="nav-link">
+                  <Link href="/api/auth/logout">
                     <a>
                       Logout
                     </a>
                  </Link>
                 )}
                 {!user && (
-                  <Link href="/api/auth/login" className="nav-link">
+                  <Link href="/api/auth/login">
                     <a>
                       Login
                     </a>
@@ -56,11 +56,11 @@ const contactus = () => {
           </nav>
         </div>
       </div>
-      <div className="title">
+      <div>
         <div className={styles.body}>
           <section>
             <div className={styles.image}>
-              <Image src="https://pngimg.com/uploads/chef/chef_PNG61.png" />
+              <Image src="https://pngimg.com/uploads/chef/chef_PNG61.png" alt="chef" />
             </div>
             <div>
               <h2> Contact Us </h2>
