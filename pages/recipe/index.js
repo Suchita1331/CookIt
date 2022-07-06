@@ -1,5 +1,7 @@
 import { useUser } from "@auth0/nextjs-auth0";
 import axios from "axios";
+import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "../../styles/recipe.module.css";
 
@@ -25,43 +27,55 @@ const RecipiesPage = () => {
   return (
     <>
       <div className={styles.hole}>
-        <div class="section">
+        <div>
           <div className={styles.navbar}>
             <nav>
-              <div class="logo">
-                <img src="/logo1.png" />
+              <div">
+                <Image src="/logo1.png" alt="logo" />
               </div>
               <ul>
                 <li>
-                  <a href="/" class="nav-link">
-                    Home
-                  </a>
+                  <Link href="/">
+                    <a>
+                      Home
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/aboutus" class="nav-link">
-                    About Us
-                  </a>
+                  <Link href="/aboutus">
+                    <a>
+                      About Us
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contactus" class="nav-link">
-                    Contact Us
-                  </a>
+                  <Link href="/contactus">
+                    <a>
+                      Contact Us
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/recipe" class="nav-link">
-                    Recipe
-                  </a>
+                  <Link href="/recipe">
+                    <a>
+                      Recipe
+                    </a>
+                  </Link>
                 </li>
                 <li>
                   {user && (
-                    <a href="/api/auth/logout" class="nav-link">
+                   <Link href="/api/auth/logout">
+                    <a>
                       Logout{" "}
                     </a>
+                   </Link>
                   )}{" "}
                   {!user && (
-                    <a href="/api/auth/login" class="nav-link">
-                      Login
-                    </a>
+                    <Link href="/api/auth/login">
+                      <a>
+                        Login
+                      </a>
+                    </Link>
                   )}
                 </li>
               </ul>
