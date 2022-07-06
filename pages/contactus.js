@@ -16,37 +16,37 @@ const contactus = () => {
             </div>
             <ul>
               <li>
-                <Link>
-                  <a href="/" className="nav-link">
+                <Link href="/" className="nav-link">
+                  <a>
                     Home
                   </a>
                 </Link>
               </li>
               <li>
-                <Link>
-                  <a href="/aboutus" className="nav-link">
+                <Link href="/aboutus" className="nav-link">
+                  <a>
                     About us
                   </a>
                 </Link>
               </li>
               <li>
-                <Link>
-                  <a href="/recipe" className="nav-link">
+                <Link href="/recipe" className="nav-link">
+                  <a>
                     Recipe
                   </a>
                 </Link>
               </li>
               <li>
                 {user && (
-                  <Link>
-                    <a href="/api/auth/logout" className="nav-link">
+                  <Link href="/api/auth/logout" className="nav-link">
+                    <a>
                       Logout
                     </a>
                  </Link>
                 )}
                 {!user && (
-                  <Link>
-                    <a href="/api/auth/login" className="nav-link">
+                  <Link href="/api/auth/login" className="nav-link">
+                    <a>
                       Login
                     </a>
                   </Link>
@@ -81,8 +81,8 @@ const contactus = () => {
               </div>
               <ul className={styles.links}>
                 <li>
-                  <Link>
-                    <a href="/aboutus"> About us </a>
+                  <Link href="/aboutus">
+                    <a> About us </a>
                   </Link>
                 </li>
               </ul>
