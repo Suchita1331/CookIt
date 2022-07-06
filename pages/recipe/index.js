@@ -30,7 +30,7 @@ const RecipiesPage = () => {
         <div>
           <div className={styles.navbar}>
             <nav>
-              <div">
+              <div>
                 <Image src="/logo1.png" alt="logo" />
               </div>
               <ul>
