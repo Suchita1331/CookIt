@@ -58,7 +58,7 @@ const members = () => {
         <div className={styles.body}>
           <section>
             <div classname={styles.image}>
-              <Image src="https://pngimg.com/uploads/chef/chef_PNG132.png" />
+              <Image src="https://pngimg.com/uploads/chef/chef_PNG132.png" alt="chef" />
             </div>
             <div>
               <h2> Members </h2>
@@ -70,7 +70,7 @@ const members = () => {
                 <p>Roll No. CS19B38</p>
               </div>
               <div>
-                <Image src="../images/Sonu.jpg" />
+                <Image src="../images/Sonu.jpg" alt="sonu" />
                 <h3>Ms. Shubhangi Chaudhary</h3>
                 <p>Dept - Computer Science And Engineering</p>
                 <p>Roll No. CS19B34</p>
