@@ -90,8 +90,8 @@ export default function Home() {
                 <span>D</span>iary!!
               </h1>
               <p>
-                "<span>Eating</span> is necessity but <span>Cooking</span> is an
-                Art."
+                <span>Eating</span> is necessity but <span>Cooking</span> is an
+                Art.
               </p>
             </div>
           </div>
