@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import Link from "next/link";
 import styles from "../../styles/recipe.module.css";
 
 export async function getStaticPaths() {
@@ -32,9 +33,11 @@ export async function getStaticProps({ params }) {
 const RecipePage = ({ recipe }) => {
   return (
     <>
-      <a href="/recipe" className={styles.back}>
-        <span>{"<"} Back</span>
-      </a>
+      <Link>
+        <a href="/recipe" className={styles.back}>
+          <span>{"<"} Back</span>
+        </a>
+      </Link>
       <section className={styles.menu}>
         <h1>{recipe.name}</h1>
         <div>
