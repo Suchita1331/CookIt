@@ -28,33 +28,33 @@ export default function Home() {
           <div className={styles.section}>
             <div className={styles.navbar}>
               <nav>
-                <div className="logo">
-                  <Image src="/logo1.png" />
+                <div>
+                  <Image src="/logo1.png" alt="logo" />
                 </div>
                 <ul>
                   <li>
-                    <Link href="/" className="nav-link">
+                    <Link href="/">
                       <a>
                         Home
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/aboutus" className="nav-link">    
+                    <Link href="/aboutus">    
                       <a>
                         About Us
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contactus" className="nav-link">
+                    <Link href="/contactus">
                       <a>
                         Contact Us
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/recipe" className="nav-link">
+                    <Link href="/recipe">
                       <a>
                         Recipe
                       </a>
@@ -62,14 +62,14 @@ export default function Home() {
                   </li>
                   <li>
                     {user && (
-                      <Link href="/api/auth/logout" className="nav-link"> 
+                      <Link href="/api/auth/logout"> 
                         <a>
                           Logout
                         </a>
                       </Link>
                     )}
                     {!user && (
-                      <Link href="/api/auth/login" className="nav-link">
+                      <Link href="/api/auth/login">
                         <a>
                           Login
                         </a>
@@ -106,7 +106,7 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=AhoZ2TbLxzU" target="popup">
                 <a>
-                  <Image src="../../images/q.jpg" />
+                  <Image src="../../images/q.jpg" alt="q" />
                 </a>
               </Link>
             </div>
@@ -114,7 +114,7 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=u3J5__4I9sQ" target="popup">
                 <a>
-                  <Image src="../../images/bmc.jpeg" />
+                  <Image src="../../images/bmc.jpeg" alt="bmc />
                 </a>
               </Link>
             </div>
@@ -122,14 +122,14 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=iKFxcxjKYPU" target="popup">
                 <a>
-                  <Image src="../../images/ccb.jpg" />
+                  <Image src="../../images/ccb.jpg" alt="ccb" />
                 </a>
               </Link>
             </div>
             <div>
               <Link href="https://www.youtube.com/watch?v=EA4yMzlHo9U" target="popup">
                 <a>
-                  <Image src="../../images/cm.jpg" />
+                  <Image src="../../images/cm.jpg" alt="cm" />
                 </a>
               </Link>
             </div>
@@ -137,7 +137,7 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=yy3R1Pe0jcc" target="popup">
                 <a>
-                  <Image src="../../images/cheesecake.jpg" />
+                  <Image src="../../images/cheesecake.jpg" alt="cheesecake" />
                 </a>
               </Link>
             </div>
@@ -145,7 +145,7 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=f_dT7ZbKnzk" target="popup">
                 <a>
-                  <Image src="../../images/lbp.jpg" />
+                  <Image src="../../images/lbp.jpg" alt="lbp" />
                 </a>
               </Link>
             </div>
@@ -153,7 +153,7 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=_q5GKCNZcHI" target="popup">
                 <a>
-                  <Image src="../../images/burger.jpg" />
+                  <Image src="../../images/burger.jpg" alt="burger" />
                 </a>
               </Link>
             </div>
@@ -161,7 +161,7 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=fCdafpE7Bpw" target="popup">
                 <a>
-                  <Image src="../../images/momos.jpg" />
+                  <Image src="../../images/momos.jpg" alt="momos" />
                 </a>
               </Link>
             </div>
@@ -169,49 +169,49 @@ export default function Home() {
             <div>
               <Link href="https://www.youtube.com/watch?v=XsipAaImDVc" target="popup">
                 <a>
-                  <Image src="../../images/pasta.jpg" />
+                  <Image src="../../images/pasta.jpg" alt="pasta" />
                 </a>
               </Link>
             </div>
             <div>
               <Link href="https://www.youtube.com/watch?v=dfNugDnzhxI" target="popup">
                 <a>
-                  <Image src="../../images/pc.jpg" />
+                  <Image src="../../images/pc.jpg" alt="pc" />
                 </a>
               </Link>
             </div>
             <div>
               <Link href="https://www.youtube.com/watch?v=aQHr9Zsnzbw" target="popup">
                 <a>
-                  <Image src="../../images/noodles.jpg" />
+                  <Image src="../../images/noodles.jpg" alt="noodles" />
                 </a>
               </Link>
             </div>
             <div>
               <Link href="https://www.youtube.com/watch?v=wSeVF0YWLV4" target="popup">
                 <a>
-                  <Image src="../../images/pt.jpg" />
+                  <Image src="../../images/pt.jpg" alt="pt" />
                 </a>
               </Link>
             </div>
             <div>
               <Link href="https://www.youtube.com/watch?v=Isn45rbkdpA" target="popup">
                 <a>
-                  <Image src="../../images/sbpie.jpg" />
+                  <Image src="../../images/sbpie.jpg" alt="sbpie" />
                 </a>
               </Link>
             </div>
             <div>
               <Link href="https://www.youtube.com/watch?v=pvSL_VsLb4w" target="popup">
                 <a>
-                  <Image src="../../images/tacos.jpg" />
+                  <Image src="../../images/tacos.jpg" alt="tacos" />
                 </a>
               </Link>
             </div>
             <div>
               <Link href="https://www.youtube.com/watch?v=h8b3rBxg9zA" target="popup">
                 <a>
-                  <Image src="../../images/tiramisu.jpg" />
+                  <Image src="../../images/tiramisu.jpg" alt="tiramisu" />
                 </a>
               </Link>
             </div>
