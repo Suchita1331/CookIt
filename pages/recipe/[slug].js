@@ -33,8 +33,8 @@ export async function getStaticProps({ params }) {
 const RecipePage = ({ recipe }) => {
   return (
     <>
-      <Link>
-        <a href="/recipe" className={styles.back}>
+      <Link href="/recipe" className={styles.back}>
+        <a>
           <span>{"<"} Back</span>
         </a>
       </Link>
